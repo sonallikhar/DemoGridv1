@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [GRID SAMPLE TEST]" parallel="tests">
+  <parameter name="browserType" value="firefox"/>
+  <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER FF(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="demo.test.grid.SeleniumCode">
+        <methods>
+          <include name="mailTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- demo.test.grid.SeleniumCode -->
+    </classes>
+  </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER FF(failed) -->
+  <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER IE(failed)" parallel="tests" preserve-order="true">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="demo.test.grid.SeleniumCode">
+        <methods>
+          <include name="mailTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- demo.test.grid.SeleniumCode -->
+    </classes>
+  </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER IE(failed) -->
+</suite> <!-- Failed suite [GRID SAMPLE TEST] -->
